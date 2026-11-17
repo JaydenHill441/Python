@@ -12,22 +12,48 @@ class Television:
         self.__channel = self.MIN_CHANNEL
 
     def power(self):
-        pass
+        if self.__status:
+            self.__status = False
+        else:
+            self.__status = True
 
     def mute(self):
-        pass
+        if self.__status:
+            if self.__muted:
+                self.__muted = False
+            else:
+                self.__muted = True
 
     def channel_up(self):
-        pass
+        if self.__status:
+            if self.__channel < self.MAX_CHANNEL:
+                self.__channel += 1
+            else:
+                self.__channel = self.MIN_CHANNEL
 
     def channel_down(self):
-        pass
+        if self.__status:
+            if self.__channel > self.MIN_CHANNEL:
+                self.__channel -= 1
+            else:
+                self.__channel = self.MAX_CHANNEL
 
     def volume_up(self):
-        pass
+        if self.__status:
+            if self.__muted:
+                self.mute()
+            if self.__volume < self.MAX_VOLUME:
+                self.__volume += 1
 
     def volume_down(self):
-        pass
+        if self.__status:
+            if self.__muted:
+                self.mute()
+            if self.__volume > self.MIN_VOLUME:
+                self.__volume -= 1
 
     def __str__(self):
-        print(f"Power - {self.__status}, Channel - {self.__channel}, Volume - {self.__volume}")
+        if self.__muted:
+            return f"Power - {self.__status}, Channel - {self.__channel}, Volume - 0"
+        else:
+            return f"Power - {self.__status}, Channel - {self.__channel}, Volume - {self.__volume}"
