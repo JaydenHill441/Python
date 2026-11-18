@@ -44,17 +44,38 @@ class TestTelevision:
         assert str(self.tv1) == "Power - True, Channel - 3, Volume - 0"
 
     def test_channel_down(self):
-        self.tv1.channel_down()
-        assert str(self.tv1) == "Power - False, Channel - 0, Volume - 0"
         self.tv1.power()
+        self.tv1.channel_up()
+        self.tv1.power()
+        self.tv1.channel_down()
+        assert str(self.tv1) == "Power - False, Channel - 1, Volume - 0"
+        self.tv1.power()
+        self.tv1.channel_down()
         self.tv1.channel_down()
         assert str(self.tv1) == "Power - True, Channel - 0, Volume - 0"
 
     def test_volume_up(self):
-        pass
+        self.tv1.volume_up()
+        assert str(self.tv1) == "Power - False, Channel - 0, Volume - 0"
+        self.tv1.power()
+        self.tv1.volume_up()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 1"
+        self.tv1.mute()
+        self.tv1.volume_up()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 2"
+        self.tv1.volume_up()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 2"
 
     def test_volume_down(self):
-        pass
-
-
-
+        self.tv1.volume_down()
+        assert str(self.tv1) == "Power - False, Channel - 0, Volume - 0"
+        self.tv1.power()
+        self.tv1.volume_up()
+        self.tv1.volume_up()
+        self.tv1.volume_down()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 1"
+        self.tv1.mute()
+        self.tv1.volume_down()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 0"
+        self.tv1.volume_down()
+        assert str(self.tv1) == "Power - True, Channel - 0, Volume - 0"
