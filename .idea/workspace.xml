@@ -4,9 +4,7 @@
     <option name="autoReloadType" value="ALL" />
   </component>
   <component name="ChangeListManager">
-    <list default="true" id="ab257488-c67a-49c4-8f32-086b40df4a50" name="Changes" comment="Step 3">
-      <change beforePath="$PROJECT_DIR$/test_television.py" beforeDir="false" afterPath="$PROJECT_DIR$/test_television.py" afterDir="false" />
-    </list>
+    <list default="true" id="ab257488-c67a-49c4-8f32-086b40df4a50" name="Changes" comment="Step 10" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -138,7 +136,7 @@
       <option name="presentableId" value="Default" />
       <updated>1794865870173</updated>
       <workItem from="1794865871153" duration="6713000" />
-      <workItem from="1794952857935" duration="4502000" />
+      <workItem from="1794952857935" duration="4813000" />
     </task>
     <task id="LOCAL-00001" summary="hello">
       <option name="closed" value="true" />
@@ -228,7 +226,23 @@
       <option name="project" value="LOCAL" />
       <updated>1794968160403</updated>
     </task>
-    <option name="localTasksCounter" value="12" />
+    <task id="LOCAL-00012" summary="Step 10">
+      <option name="closed" value="true" />
+      <created>1794968201332</created>
+      <option name="number" value="00012" />
+      <option name="presentableId" value="LOCAL-00012" />
+      <option name="project" value="LOCAL" />
+      <updated>1794968201332</updated>
+    </task>
+    <task id="LOCAL-00013" summary="Step 10">
+      <option name="closed" value="true" />
+      <created>1794968208758</created>
+      <option name="number" value="00013" />
+      <option name="presentableId" value="LOCAL-00013" />
+      <option name="project" value="LOCAL" />
+      <updated>1794968208758</updated>
+    </task>
+    <option name="localTasksCounter" value="14" />
     <servers />
   </component>
   <component name="TypeScriptGeneratedFilesManager">
@@ -248,11 +262,12 @@
   <component name="VcsManagerConfiguration">
     <MESSAGE value="hello" />
     <MESSAGE value="Step 3" />
-    <option name="LAST_COMMIT_MESSAGE" value="Step 3" />
+    <MESSAGE value="Step 10" />
+    <option name="LAST_COMMIT_MESSAGE" value="Step 10" />
   </component>
   <component name="com.intellij.coverage.CoverageDataManagerImpl">
     <SUITE FILE_PATH="coverage/lab12$.coverage" NAME=" Coverage Results" MODIFIED="1794968149222" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
     <SUITE FILE_PATH="coverage/lab12$television.coverage" NAME="television Coverage Results" MODIFIED="1794952511889" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
-    <SUITE FILE_PATH="coverage/lab12$main.coverage" NAME="main Coverage Results" MODIFIED="1794952904089" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
+    <SUITE FILE_PATH="coverage/lab12$main.coverage" NAME="main Coverage Results" MODIFIED="1794968471599" SOURCE_PROVIDER="com.intellij.coverage.DefaultCoverageFileProvider" RUNNER="coverage.py" COVERAGE_BY_TEST_ENABLED="false" COVERAGE_TRACING_ENABLED="false" WORKING_DIRECTORY="$PROJECT_DIR$" />
   </component>
 </project>
